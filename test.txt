@@ -1,0 +1,14 @@
+<div key={index} className="mb-4">
+              <label className="flex items-center w-full px-4 py-2 bg-gray-700 border rounded-md cursor-pointer">
+                <Upload className="mr-2" />
+                <span className="flex-1">Select Mobile Image {index + 1}</span>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => handleImageChange(e, setMobileImages, index)}
+                  className="hidden"
+                />
+              </label>
+              {/* Display file name if selected */}
+              {mobileImages[index] && <p className="text-sm text-gray-400 mt-1">{mobileImages[index].name}</p>}
+            </div>
