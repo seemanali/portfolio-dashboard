@@ -177,7 +177,7 @@ function ManageAbout() {
         </div>
         {isEditing ? (
           <Editor
-            apiKey={config.TINYMCE_EDITOR_APIKEY}
+            apiKey={"2w55lps83a4h3uix1sm1lyo0um113u0t7kzhfvlpcz8s5fch"}
             value={content}
             init={{
               height: 500,
