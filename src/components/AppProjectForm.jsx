@@ -187,6 +187,7 @@ const AppProjectForm = () => {
                 livedemo: formData.demoUrl,
                 github: formData.githubUrl,
                 download: formData.downloadUrl,
+                screenshots: screenshotsURL,
                 banner: bannerURL,
                 featured: formData.isFeatured,
                 technology: JSON.stringify(formData.technologies)
