@@ -15,14 +15,14 @@ class UploadApp {
         this.storage = new Storage(this.client);
     }
 
-    async createApp({ title, tagline, problem, solution, features, techstack, livedemo, github, download, banner, featured, technology }) {
+    async createApp({ title, tagline, problem, solution, features, techstack, livedemo, github, download, screenshots ,banner, featured, technology }) {
         try {
             const response = await this.databases.createDocument(
                 config.DATABASE_ID,
                 config.APP_PROJECT, // collectionId
                 ID.unique(),
                 {
-                    title, tagline, problem, solution, features, techstack, livedemo, github, download, banner, featured, technology
+                    title, tagline, problem, solution, features, techstack, livedemo, github, download,screenshots, banner, featured, technology
                 },
 
             );
